@@ -13,6 +13,7 @@
   --teal: #20c997;
   --cyan: #0dcaf0;
   --dark: #292a2b;
+  color: #fff;
 }
 *,
 ::before,
@@ -33,6 +34,7 @@ h6 {
   font-family: "Titilliuim Web", sans-serif;
 }
 h1 {
+  color: var(--blue);
   font-size: 3.5rem;
 }
 h2 {
@@ -50,7 +52,11 @@ h5 {
 h6 {
   font-size: 0.7rem;
 }
-
+nav,
+p {
+  font-size: 3rem;
+  color: var(--green);
+}
 section,
 div {
   display: flex;

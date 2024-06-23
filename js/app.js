@@ -21,3 +21,29 @@ box3.classList.toggle("dark");
 box3.classList.toggle("dark");
 //next same line will again add a class of "dark"
 box3.classList.toggle("dark");
+
+//atributo dataset
+let number = box3.dataset.boxNumber;
+console.log(number);
+// console.log(box3.dataset.month);
+// // document.body.innerHTML = "<h1>Wow!</h1>";
+// document.body.firstElementChild.innerHTML = "<h1>Wow!</h1>";
+// document.querySelector("section");
+// console.log(document.querySelector("section").innerHTML);
+// console.log(document.querySelector("section").outerHTML);
+// document.querySelector("section").outerHTML = "<h1>Wow!</h1>";
+
+// //Modify content
+// document.body.insertAdjacentHTML("afterbegin", "<nav>navigation</nav>");
+// document
+//   .querySelector("nav")
+//   .insertAdjacentHTML("beforebegin", "<h1>Main Header</h1>");
+// document
+//   .querySelector("nav")
+//   .insertAdjacentHTML(
+//     "beforeend",
+//     '<a href="https://www.google.com/">Google</a>'
+//   );
+// document
+//   .querySelector("nav")
+//   .insertAdjacentHTML("afterend", "<p>This is  a paragraph</p>");
