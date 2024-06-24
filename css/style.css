@@ -13,7 +13,7 @@
   --teal: #20c997;
   --cyan: #0dcaf0;
   --dark: #292a2b;
-  color: #fff;
+  /* color: #fff; */
   box-sizing: border-box;
 }
 *,
