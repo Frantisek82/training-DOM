@@ -12,34 +12,33 @@ document.body.lastElementChild;
 document.body.nextElementSibling;
 document.body.previousElementSibling;
 
-//seleccionar elementos desde js
+// // quearySelector() returns the first matching element or null
 let nav = document.querySelector("nav");
-// console.log(nav); //muestra el elemento nav por consola
-
-//seleccionar elemento co clase
+// console.log(nav);
 let active = document.querySelector(".active");
 // console.log(active);
 
-//seleccionar multipples elementos con la misma etiqueta
+// // quearySelectorAll() returns all matching elements
 let headersAndParagraphs = document.querySelectorAll("p, h1");
-// console.log(headersAndParagraphs[0].innerText); //se accede a un elemento con los corchetes y a su contenido con .innerText
+// console.log(headersAndParagraphs[0].innerText);
 
-//accediendo a elementos hijos mediante .children[numHijo]
+// // accesing nodes without text
 // console.log(nav.children[0].children[0].children[0]);
-
 // console.log(
 //   nav.firstElementChild.firstElementChild.firstElementChild.parentNode
 //     .nextElementSibling.firstChild.parentNode
 // );
 
-// console.log(headersAndParagraphs[1].innerText);
-// console.log(headersAndParagraphs[2].innerText);
+// // accesing with text
+// console.log(headersAndParagraphs[1].firstChild);
+// console.log(headersAndParagraphs[2].firstChild.nodeValue);
 // console.log(headersAndParagraphs[3].innerText);
-
+// console.log(nav.nodeName);
 // console.log(
 //   headersAndParagraphs[0].nextElementSibling.nextElementSibling
 //     .nextElementSibling
 // );
+
 
 let main = document.querySelector("#first");
 // console.log(main);
