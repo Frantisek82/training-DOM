@@ -84,6 +84,9 @@ div {
   color: var(--dark);
   transition: all 1s ease-in-out;
 }
+.main {
+  margin-top: 2em;
+}
 
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 576px and up) */

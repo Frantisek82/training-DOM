@@ -47,3 +47,26 @@ console.log(number);
 // document
 //   .querySelector("nav")
 //   .insertAdjacentHTML("afterend", "<p>This is  a paragraph</p>");
+
+//Insertar, borrar y reemplazar nodos en el arbol
+let header = document.createElement("h1");
+header.append("Hello World!");
+document.body.append(header);
+header.prepend("¡");
+document.querySelector("h1").firstChild.before("¡¡");
+let paragraph = document.createElement("p");
+paragraph.textContent = "writting a paragraph";
+document.body.append(paragraph);
+// document.querySelector("h1").replaceWith(paragraph);
+// paragraph.remove();
+// document.body.remove();
+paragraph.style.textAlign = "center";
+paragraph.style.textTransform = "capitalize";
+paragraph.style.backgroundColor = "black";
+paragraph.style.color = "white";
+paragraph.style.padding = "2em";
+paragraph.setAttribute("class", "light");
+// paragraph.setAttribute("class", "main");
+console.log(paragraph.getAttribute("class"));
+paragraph.classList.add("light");
+console.log(paragraph.style.cssText);
