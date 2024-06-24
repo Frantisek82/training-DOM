@@ -70,3 +70,5 @@ paragraph.setAttribute("class", "light");
 console.log(paragraph.getAttribute("class"));
 paragraph.classList.add("light");
 console.log(paragraph.style.cssText);
+
+//end of the sesion 28, ATR10
