@@ -1,3 +1,5 @@
+// ------classList------
+
 // let box1 = document.body.firstElementChild.firstElementChild;
 let box1 = document.querySelector("div");
 console.log(box1);
@@ -8,21 +10,21 @@ console.log(box2);
 let box3 = box2.nextElementSibling;
 console.log(box3);
 
-//adding a class to the div with javascript
+// adding a class to the div with javascript
 box1.classList.add("dark");
-//removing a class from the div with javascript
+// removing a class from the div with javascript
 box1.classList.remove("dark");
 box2.classList.add("dark");
 console.log(box3.classList.contains("dark"));
 
-//the first line will add a class of "dark"
+// the first line will add a class of "dark"
 box3.classList.toggle("dark");
-//the second same line will remove a class of "dark"
+// the second same line will remove a class of "dark"
 box3.classList.toggle("dark");
-//next same line will again add a class of "dark"
+// next same line will again add a class of "dark"
 box3.classList.toggle("dark");
 
-//atributo dataset
+// -----atributo dataset-----
 let number = box3.dataset.boxNumber;
 console.log(number);
 // console.log(box3.dataset.month);
@@ -33,7 +35,7 @@ console.log(number);
 // console.log(document.querySelector("section").outerHTML);
 // document.querySelector("section").outerHTML = "<h1>Wow!</h1>";
 
-// //Modify content
+// // -----Modify content-----
 // document.body.insertAdjacentHTML("afterbegin", "<nav>navigation</nav>");
 // document
 //   .querySelector("nav")
@@ -48,25 +50,29 @@ console.log(number);
 //   .querySelector("nav")
 //   .insertAdjacentHTML("afterend", "<p>This is  a paragraph</p>");
 
-//Insertar, borrar y reemplazar nodos en el arbol
-let header = document.createElement("h1");
-header.append("Hello World!");
-document.body.append(header);
-header.prepend("¡");
-document.querySelector("h1").firstChild.before("¡¡");
-let paragraph = document.createElement("p");
-paragraph.textContent = "writting a paragraph";
+// Insertar, borrar y reemplazar nodos en el arbol
+// append() and prepend() arguments can be Node objects or strings
+let header = document.createElement("h1"); // Create an empty <h1> element
+header.append("Hello World!"); // Adding a string to <h1>
+header.prepend("¡"); // Adding more characters at start of <h1>
+document.body.append(header); // Adding the <h1> to body
+// after() and before() work on both Element and Text nodes
+document.querySelector("h1").firstChild.before("¡¡"); // Adding more text before text
+let paragraph = document.createElement("p"); // Creating a new paragraph
+paragraph.textContent = "writting a paragraph"; // Adding some text
 document.body.append(paragraph);
+// -----replaceWith() and remove() metohods-----
 // document.querySelector("h1").replaceWith(paragraph);
 // paragraph.remove();
 // document.body.remove();
+// -----styling inline-----
 paragraph.style.textAlign = "center";
 paragraph.style.textTransform = "capitalize";
 paragraph.style.backgroundColor = "black";
 paragraph.style.color = "white";
 paragraph.style.padding = "2em";
-paragraph.setAttribute("class", "light");
+paragraph.setAttribute("class", "light"); // Adding a class
 // paragraph.setAttribute("class", "main");
-console.log(paragraph.getAttribute("class"));
+console.log(paragraph.getAttribute("class")); // Checking element classes
 paragraph.classList.add("light");
-console.log(paragraph.style.cssText);
+console.log(paragraph.style.cssText); // Reading all css inline styles
