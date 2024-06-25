@@ -13,6 +13,7 @@
   --teal: #20c997;
   --cyan: #0dcaf0;
   --dark: #292a2b;
+  --white: #fff;
 }
 *,
 ::before,
@@ -24,54 +25,23 @@
   outline: 0 none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Titilliuim Web", sans-serif;
-}
-h1 {
-  font-size: 3.5rem;
-}
-h2 {
-  font-size: 2.25rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-h4 {
-  font-size: 1.1rem;
-}
-h5 {
-  font-size: 0.9rem;
-}
-h6 {
-  font-size: 0.7rem;
-}
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  /* here your code */
-}
+/* @media (min-width: 576px) {
+} */
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  /* here your code */
-}
+/* @media (min-width: 768px) {
+} */
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  /* here your code */
-}
+/* @media (min-width: 992px) {
+} */
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* here your code */
-}
+/* @media (min-width: 1200px) {
+} */
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  /* here your code */
-}
+/* @media (min-width: 1400px) {
+} */
