@@ -32,17 +32,25 @@ div {
   justify-content: center;
   align-items: center;
 }
-.light {
-  background-color: var(--yellow);
-  color: var(--dark);
-  transition: all 1s ease-in-out;
-}
 .fa-solid {
   margin-left: 25px;
   transition: all 1s ease-in-out;
 }
+.light {
+  /* background-color: var(--yellow); */
+  background-image: url(/training-DOM/img/clouds-1117584_1280.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: var(--dark);
+  transition: all 1s ease-in-out;
+}
 .dark {
-  background-color: var(--green);
+  /* background-color: var(--dark); */
+  background-image: url(/training-DOM/img/pexels-kaip-1341279.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   color: var(--white);
   transition: all 1s ease-in-out;
 }
@@ -161,16 +169,16 @@ div {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
   -webkit-transition-property: transform;
   transition-property: transform;
 }
 .spin:hover,
 .spin:focus,
 .spin:active {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(210deg);
+  transform: rotate(210deg);
 }
 
 /* -----Bootstrap breakpoints----- */
