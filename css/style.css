@@ -38,19 +38,13 @@ div {
 }
 .light {
   /* background-color: var(--yellow); */
-  background-image: url(/training-DOM/img/clouds-1117584_1280.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background-color: var(--yellow);
   color: var(--dark);
   transition: all 1s ease-in-out;
 }
 .dark {
   /* background-color: var(--dark); */
-  background-image: url(/training-DOM/img/pexels-kaip-1341279.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background-color: var(--green);
   color: var(--white);
   transition: all 1s ease-in-out;
 }
